@@ -40,6 +40,7 @@ def save_analysis(filename, prediction, score, duration):
             )
             VALUES (?, ?, ?, ?, ?)
         """, (
+            created_at,
             filename,
             prediction,
             float(score),
